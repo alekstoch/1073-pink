@@ -28,77 +28,78 @@
           </ul>
         </div>
       </nav>
+      <p class="page-header__text">Конкурс на самое безбашенное путешествие с Пинк</p>
       <img class="page-header__background-image" src="img/background-mobile.svg" width="320" height="396" alt="Pink">
     </header>
     <main class="form-main">
-      <section class="lastname">
-        <div class="lastname__wrapper">
-          <h2 class="visually-hidden">Регистрация</h2>
-          <p class="lastname__bonus">Поделитесь свое историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту</p>
-          <div class="lastname__form">
-            <label for="lastname">Фамилия:</label>
-            <input type="text" name="lastname" id="lastname" required>
-            <label for="firstname">Имя:</label>
-            <input type="text" name="firstname" id="firstname" required>
-            <label for="firstname-second">Отчество:</label>
-            <input type="text" name="firstname-second" id="firstname-second" required>
+      <p class="form-main__bonus">Поделитесь свое историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту</p>
+      <form class="form__info">
+        <section class="form">
+          <div class="form__wrapper">
+            <h2 class="visually-hidden">Регистрация</h2>
+              <label for="lastname">Фамилия:</label>
+              <input type="text" name="lastname" id="lastname" required>
+              <label for="firstname">Имя:</label>
+              <input type="text" name="firstname" id="firstname" required>
+              <label for="firstname-second">Отчество:</label>
+              <input type="text" name="firstname-second" id="firstname-second" required>
+            </div>
+        </section>
+        <section class="filter">
+          <div class="filter__wrapper">
+            <h2 class="visually-hidden">Успехи</h2>
+            <p class="filter__progress">Ваши безбашенные достижения в путешествии</p>
+            <div class="filter__list--checkbox">
+              <label for="one">Сделал селфи с акулой</label>
+              <input type="checkbox" name="one" id="one" checked>
+              <label for="two">Обгорел на пляже</label>
+              <input type="checkbox" name="two" id="two" checked>
+              <label for="three">Видел Чака Норриса</label>
+              <input type="checkbox" name="three" id="three">
+              <label for="four">Накупил сувениров</label>
+              <input type="checkbox" name="four" id="four">
+              <label for="five">Удержал башню</label>
+              <input type="checkbox" name="five" id="five" checked>
+              <label for="six">Разгромил отель</label>
+              <input type="checkbox" name="six" id="six">
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="filter">
-        <div class="filter__wrapper">
-          <h2 class="visually-hidden">Успехи</h2>
-          <p class="filter__progress">Ваши безбашенные достижения в путешествии</p>
-          <div class="filter__success">
-            <label for="one">Сделал селфи с акулой</label>
-            <input type="checkbox" name="one" id="one" checked>
-            <label for="two">Обгорел на пляже</label>
-            <input type="checkbox" name="two" id="two" checked>
-            <label for="three">Видел Чака Норриса</label>
-            <input type="checkbox" name="three" id="three">
-            <label for="four">Накупил сувениров</label>
-            <input type="checkbox" name="four" id="four">
-            <label for="five">Удержал башню</label>
-            <input type="checkbox" name="five" id="five" checked>
-            <label for="six">Разгромил отель</label>
-            <input type="checkbox" name="six" id="six">
+        </section>
+        <section class="form">
+          <div class="form__wrapper">
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="form__info">
+              <label for="tel">Номер телефона</label>
+              <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+              <label for="email">Адрес почты</label>
+              <input type="email" name="email" id="email" placeholder="Введите почту*" required>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="link">
-        <div class="link__wrapper">
-          <h2 class="visually-hidden">Контакты</h2>
-          <div class="link__contacts">
-            <label for="tel">Номер телефона</label>
-            <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-            <label for="email">Адрес почты</label>
-            <input type="email" name="email" id="email" placeholder="Введите почту*" required>
+        </section>
+        <section class="filter">
+          <div class="filter__wrapper">
+            <h2 class="visually-hidden">Выбор платформы</h2>
+            <div class="filter__list--radio">
+              <input type="radio" name="iOS" id="iOS" checked>
+              <label for="iOS">Pink для OS</label>
+              <input type="radio" name="Android" id="Android">
+              <label for="Android">Pink на Android</label>
+              <input type="radio" name="windowsPhone" id="windowsPhone">
+              <label for="windowsPhone">Pink на Windows Phone</label>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="platform">
-        <div class="platform__wrapper">
-          <h2 class="visually-hidden">Выбор платформы</h2>
-          <div class="platform__mobile-os">
-            <input type="radio" name="iOS" id="iOS" checked>
-            <label for="iOS">Pink для OS</label>
-            <input type="radio" name="Android" id="Android">
-            <label for="Android">Pink на Android</label>
-            <input type="radio" name="windowsPhone" id="windowsPhone">
-            <label for="windowsPhone">Pink на Windows Phone</label>
+        </section>
+        <section class="comments">
+          <div class="comments__wrapper">
+            <h2 class="visually-hidden">Выбор платформы</h2>
+            <div class="comments__emotions">
+              <label for="comment">Опишите свои эмоции</label>
+              <textarea name="comment" id="comment" placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
+            </div>
+            <input type="button" value="Отправить форму">
+            <p class="comments__footnote">*-Обязательные поля</p>
           </div>
-        </div>
-      </section>
-      <section class="comments">
-        <div class="comments__wrapper">
-          <h2 class="visually-hidden">Выбор платформы</h2>
-          <div class="comments__emotions">
-            <label for="comment">Опишите свои эмоции</label>
-            <textarea name="comment" id="comment" placeholder="Можно прям в красках, не стеснясь в выражениях"></textarea>
-          </div>
-          <input type="button" value="Отправить форму">
-          <p class="comments__footnote">*-Обязательные поля</p>
-        </div>
+        </form>
       </section>
     </main>
     <footer class="footer">
