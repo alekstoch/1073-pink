@@ -1,0 +1,44 @@
+.download {
+  font-size: 14px;
+  line-height: 10px;
+  color: #ffffff;
+}
+
+.download__background-image {
+    background: @bg-darkblue url("img/back-mobile@1x.jpg") no-repeat 50% 0;
+    background-size: 660px auto;
+    min-width: 320px
+}
+
+.download__tagline {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .download__background-image {
+    background: @bg-darkblue url("img/back-desktop.png") no-repeat 50% 0;
+    min-width: 660px
+  }
+  .download__tagline {
+    font-size: 40px;
+    line-height: auto;
+    color: #ffffff;
+    font-weight: lighter;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .download__background-image {
+    background: @bg-darkblue url("img/back-desktop.png") no-repeat 50% 0;
+    background-size: 1178px auto;
+    min-width: 660px
+  }
+  .download__tagline {
+    font-size: 50px;
+    line-height: auto;
+    color: #ffffff;
+    font-weight: lighter;
+  }
+}

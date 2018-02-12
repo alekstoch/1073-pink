@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -28,11 +31,12 @@
           </ul>
         </div>
       </nav>
-      <img class="page-header__background-image" src="img/background-mobile.svg" width="320" height="396"> alt="Pink">
     </header>
     <main class="page-main">
       <section class="download">
-        <div class="download__wrapper">
+        <div class="download__wrapper
+          <p class="download__tagline">Взгляните на жизнь иначе!</p>
+          <img class="download__background-image" src="img/bg-back-mobile@1x.jpg" width="320" height="396"> alt="Pink">
           <h2 class="visually-hidden">Скачать приложение</h2>
           <a class="download__app button" href="#">Скачать приложение</a>
           <div class="download__image">
@@ -80,37 +84,30 @@
         <div class="price__wrapper slider-price">
           <h2 class="visually-hidden">Наши цены</h2>
           <div class="price__list slider__list">
-            <table class="price__item slider__item">
-              <tr>
-                <td class="price__name">Хит
-                </td>
-                <td class="price__tariff">
-                Стандарт<br>3.99 USD
-                </td>
+            <table class="price__items">
+              <tr class="price__table-header-group">
+                <th class="price__tariff__empty"></th>
+                <th class="price__tariff">База<br>1.99 USD</th>
+                <th class="price__tariff">Стандарт<br>3.99 USD</th>
+                <th class="price__tariff">Анлим<br>9.99 USD</th>
               </tr>
-              <tr>
-                <td class="price__option">
-                Розовый фильтр
-                </td>
+              <tr class="price__table-row-group">
+                <td class="price__option">Розовый фильтр</td>
                 <td class="price__field">
-                <img class="price__check-image" src="img/check-mobile.svg" width="32" height="22" alt="Yes">
-                </td>
+                <td class="price__field">
+                <td class="price__field">
               </tr>
-              <tr>
-                <td class="price__option">
-                Смайлики
-                </td>
+              <tr class="price__table-row-group">
+                <td class="price__option">Смайлики</td>
                 <td class="price__field">
-                <img class="price__check-image" src="img/check-mobile.svg" width="32" height="22" alt="Yes">
-                </td>
+                <td class="price__field">
+                <td class="price__field">
               </tr>
-              <tr>
-                <td class="price__option">
-                Комментарии
-                </td>
+              <tr class="price__table-row-group">
+                <td class="price__option">Комментарии</td>
                 <td class="price__field">
-                <img class="price__cross-image" src="img/cross-mobile.svg" width="27" height="27" alt="No">
-                </td>
+                <td class="price__field">
+                <td class="price__field">
               </tr>
             </table>
           </div>
@@ -135,6 +132,9 @@
             <p class="footer-info__text">ул. Большая Конюшенная, 19/8</p>
           </div>
           <img class="footer__map" src="img/map-mobile.svg" width="320" height="202" alt="map">
+          <div class="footer__copyright">
+              <p>Разработано</p>
+          </div>
       </div>
     </footer>
   </body>
