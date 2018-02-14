@@ -1,19 +1,29 @@
 .page-header {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  background-color: #293646;
 }
 
 .page-header__logo {
   height: 70px;
 }
 
-@media (min-width: @tablet-width) {
 
+
+
+@media (min-width: @tablet-width) {
+  height: 105px;
 }
 
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    background: rgba(24, 33, 42, 0.1);
+  }
   .page-header__logo {
-    height: 114px;
+    height: 109px;
+    width: 400px;
+    background: rgba(24, 33, 42, 0.1);
   }
 }

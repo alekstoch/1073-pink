@@ -1,0 +1,79 @@
+.main-nav {
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: rgba(20, 25, 31, 0.5);
+
+}
+
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-list__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  border: #4b565c solid 1px;
+  border-left: none;
+  border-right: none;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(20, 25, 31, 0);
+  }
+
+  .page-header__logo {
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(20, 25, 31, 0);
+  }
+
+  .main-nav__wrapper {
+    width: 800px;
+    margin: 0;
+    background-color: rgba(20, 25, 31, 0.5);
+  }
+
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__list {
+    padding: 45px 40px;
+    margin: 0;
+    background-color: rgba(20, 25, 31, 0);
+
+  }
+
+  .site-list__item {
+    border: none;
+    background-color: rgba(20, 25, 31, 0);
+
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
